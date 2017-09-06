@@ -10,15 +10,36 @@
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <header>
-      <h1>
-        Timestamp Microservice
-      </h1>
-    </header>
+    
+    <h1>
+      Timestamp Microservice
+    </h1>
+    
+    <h2>
+      How It Works
+    </h2>
 
     <p>
-      To be expanded upon...
+      Pass a string to the URL. If it contains either a Unix timestamp or a natural language date, the service will return
+      a JSON object containing both the timestamp and natural language form of the given date. If the string is not a 
+      valid date, the service will return the same object with null values.
     </p>
+    
+    <h2>
+      Examples
+    </h2>
+    
+    <ul>
+      <li><a href="https://timestamp-jsanderson.glitch.me/1504656000">1504656000</a></li>
+      <li><a href="https://timestamp-jsanderson.glitch.me/September 6, 2017">September 6, 2017</a></li>
+      <li><a href="https://timestamp-jsanderson.glitch.me/06 Sep 2017">06 Sep 2017</a></li>
+      <li><a href="https://timestamp-jsanderson.glitch.me/09 06 17">09 06 17</a></li>
+      <li><a href="https://timestamp-jsanderson.glitch.me/not a date value">not a date value</a></li>
+    </ul>
+      
+      <p>
+        Created by <a href="https://github.com/J-Sanderson">J. Sanderson</a> for <a href="https://www.freecodecamp.org">freeCodeCamp</a>.
+      </p>
 
   </body>
 </html>
